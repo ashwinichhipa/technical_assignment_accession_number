@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8"></meta>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    
+    <title>Accession Number</title>
+
+    <link href="bootstrap.min.css" rel="stylesheet"></link>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"></link>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"></link>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+	<!-- CSS -->
+    <style>
+    body {
+        padding-top: 50px;
+		background-color: #FBFCFC;
+	}
+	.table-fixed{
+	  width: 100%;
+	  tbody{
+		height:80px;
+		overflow-y:scroll; !important
+		display: inline-block;
+		width: 100%;
+		}
+	  thead,tbody,tr,td,th{
+		display:block;
+	  }
+	  tbody{
+		td{
+		  float:left;
+		}
+	  }
+	  thead {
+		tr{
+		  th{
+			float:left;
+			border-color:#e67e22;
+		  }
+		}
+	  }
+	}
+	img.gravatar {
+		width: 40px;
+		height: 40px;
+		float:left;
+		margin-right:10px;
+	}
+    </style>
+</head>
+
+<body>
+    <div class="container accessionNumber"> 		
+		<div class="row">
+            <div class="col-lg-12 text-center">
+                <h1><u>Accession Number Ordering Result</u></h1>
+			</div>
+        </div>
+		<div class="row">
+			<div class="col-md-3">
+				&nbsp;
+			</div>
+			<div class="col-md-6">
+				<br/>
+				<h3>Ordered Accession Numbers : </h3> <br/>
+				<p th:text="${aNum.toString()}" /> <br/>
+				<a href="/home">Enter Data Again.</a>
+			</div>
+			<div class="col-md-3">
+				&nbsp;
+			</div>
+	   </div>
+	 </div>
+   <script src="jquery.js"></script>
+   <script src="bootstrap.min.js"></script>
+
+</body>
+
+</html>
