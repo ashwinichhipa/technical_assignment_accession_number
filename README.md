@@ -9,8 +9,8 @@
 ```
 
 ``` 
- git clone https://github.com/ashwinichhipa/Accession.git 
- cd Accession
+ git clone https://github.com/ashwinichhipa/technical_assignment_accession_number.git 
+ cd technical_assignment_accession_number
 ```
   
 ### Test cases execution
