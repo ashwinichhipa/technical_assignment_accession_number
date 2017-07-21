@@ -66,6 +66,11 @@ public class AccessionImplementation implements AccessionInterface {
 	    Map<String, String> treeMap = new TreeMap<String, String>(map);
 	    
 	    //Using Stack data structure to store and consecutive data inputs and popping it out when next input is not in order 
+	    //Can also add parallet stream concept on entrySet() of treeMap, which will help in faster processing
+	    //  treeMap.entrySet()
+	    //    .parallelStream()
+	    //    .forEach(entry -> {
+	    //		rest of the code.
 	    
 	    treeMap.entrySet().forEach(entry -> {   	
         	String val = entry.getValue();
